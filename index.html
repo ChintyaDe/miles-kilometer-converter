@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="C:/Users/chint/Projects/Unit Converter/style.css"></link>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="first">
+			<h1>Unit Converter</h1>
+		</div>
+		<div class="second">
+			<input class="flex-item" id="value" type="number" placeholder="Enter number...">
+			<select id="unit-from" name="unit-to">
+				<option value="from" selected disabled>From</option>
+				<option id="miles" value="miles">Miles</option>
+				<option value="km">Kilometer</option>
+			</select>
+			<select class="flex-item" id="unit-to" name="unit-to">
+				<option value="to" selected disabled>To</option>
+				<option value="miles">Miles</option>
+				<option id="km" value="km">Kilometer</option>
+			</select>
+			<button onclick=convert() class="flex-item">Convert</button>
+		</div>
+		<div class="third">
+			<p id="result">Result : 0</p>
+		</div>
+		<script src="C:/Users/chint/Projects/Unit Converter/script.js"></script>
+	</div>
+</body>
+</html>

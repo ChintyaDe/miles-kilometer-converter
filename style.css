@@ -1,0 +1,66 @@
+body {
+	background-color: indigo;
+}
+
+.grid-container {
+	display: grid;
+	grid: repeat(3,1fr);
+	grid-template:
+		"header"
+		"input"
+		"result";
+}
+
+.first {
+	grid-area: header;
+}
+
+.second {
+	grid-area: input;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.third {
+	grid-area: result;
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-item {
+	margin: 0 5px 0 5px;
+}
+
+h1 {
+	color: indigo;
+	background-color: lavender;
+	padding: 5px 5px 5px 20px;
+	border-radius: 5px;
+}
+
+input {
+	padding: 5px;
+	flex-grow: 2;
+}
+
+select {
+	font-weight: bold;
+	padding: 5px;
+	flex-grow: 1;
+}
+
+button {
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 5px;
+	flex-grow: 1;
+}
+
+p {
+	background-color: lavender;
+	border-radius: 5px;
+	color: indigo;
+	font-family: "calibri";
+	padding: 5px;
+}
